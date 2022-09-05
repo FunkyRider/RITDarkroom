@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79E86AB5-56B4-485E-90C2-85F53473D3F5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RITDarkRoom</RootNamespace>
+    <ProjectName>RITDarkroom</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)cr2info;$(ProjectDir)cr2raw;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(ProjectDir)cr2info;$(ProjectDir)cr2raw;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cr2info\CR2Info.h" />
+    <ClInclude Include="cr2info\edsdk.h" />
+    <ClInclude Include="cr2info\EDSDKErrors.h" />
+    <ClInclude Include="cr2info\EDSDKTypes.h" />
+    <ClInclude Include="cr2raw\array.h" />
+    <ClInclude Include="cr2raw\cpuinfo.h" />
+    <ClInclude Include="cr2raw\cr2conv.h" />
+    <ClInclude Include="cr2raw\cr2develop.h" />
+    <ClInclude Include="cr2raw\cr2hot.h" />
+    <ClInclude Include="cr2raw\cr2plugins.h" />
+    <ClInclude Include="cr2raw\cr2raw.h" />
+    <ClInclude Include="cr2raw\crzops.h" />
+    <ClInclude Include="cr2raw\denoise.h" />
+    <ClInclude Include="cr2raw\exif.h" />
+    <ClInclude Include="cr2raw\image.h" />
+    <ClInclude Include="cr2raw\os.h" />
+    <ClInclude Include="cr2raw\ptr.h" />
+    <ClInclude Include="cr2raw\resample.h" />
+    <ClInclude Include="cr2raw\saveimage.h" />
+    <ClInclude Include="cr2raw\sharpen.h" />
+    <ClInclude Include="cr2raw\stdafx.h" />
+    <ClInclude Include="cr2raw\tile.h" />
+    <ClInclude Include="cr2raw\ustring.h" />
+    <ClInclude Include="libjpeg\cderror.h" />
+    <ClInclude Include="libjpeg\cdjpeg.h" />
+    <ClInclude Include="libjpeg\jconfig.h" />
+    <ClInclude Include="libjpeg\jdct.h" />
+    <ClInclude Include="libjpeg\jerror.h" />
+    <ClInclude Include="libjpeg\jinclude.h" />
+    <ClInclude Include="libjpeg\jmemsys.h" />
+    <ClInclude Include="libjpeg\jmorecfg.h" />
+    <ClInclude Include="libjpeg\jpegint.h" />
+    <ClInclude Include="libjpeg\jpeglib.h" />
+    <ClInclude Include="libjpeg\jversion.h" />
+    <ClInclude Include="libjpeg\transupp.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RITDarkRoom.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cr2info\CR2Info.cpp" />
+    <ClCompile Include="cr2raw\cpuinfo.cpp" />
+    <ClCompile Include="cr2raw\cr2conv.cpp" />
+    <ClCompile Include="cr2raw\cr2develop.cpp" />
+    <ClCompile Include="cr2raw\cr2hot.cpp" />
+    <ClCompile Include="cr2raw\cr2plugins.cpp" />
+    <ClCompile Include="cr2raw\cr2raw.cpp" />
+    <ClCompile Include="cr2raw\crzops.cpp" />
+    <ClCompile Include="cr2raw\denoise.cpp" />
+    <ClCompile Include="cr2raw\exif.cpp" />
+    <ClCompile Include="cr2raw\image.cpp" />
+    <ClCompile Include="cr2raw\os.cpp" />
+    <ClCompile Include="cr2raw\resample.cpp" />
+    <ClCompile Include="cr2raw\saveimage.cpp" />
+    <ClCompile Include="cr2raw\sharpen.cpp" />
+    <ClCompile Include="cr2raw\string.cpp" />
+    <ClCompile Include="cr2raw\tile.cpp" />
+    <ClCompile Include="RITDarkRoom.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RITDarkRoom.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="1dbig.ico" />
+    <Image Include="1dmed.ico" />
+    <Image Include="1dmid.ico" />
+    <Image Include="1dsml.ico" />
+    <Image Include="RITDarkRoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="manifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="cr2info\EDSDK.lib" />
+    <Library Include="libjpeg\jpeg.lib" />
+    <Library Include="libzip\libzip.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

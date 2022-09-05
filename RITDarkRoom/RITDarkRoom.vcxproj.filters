@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cr2conv">
+      <UniqueIdentifier>{fa13726a-3434-49ac-b760-57161537b96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cr2conv">
+      <UniqueIdentifier>{c2ef509d-9b45-43f2-9df0-ebeba75a91ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cr2info">
+      <UniqueIdentifier>{11b36b66-e92c-483c-9cd5-985dc0c4a7ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cr2info">
+      <UniqueIdentifier>{49818cf5-65f4-4ad1-b792-bc710e5cd102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libjpeg">
+      <UniqueIdentifier>{e4d7f8fa-7443-4266-a570-5dc2d104fce8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RITDarkRoom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\array.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cr2conv.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cr2develop.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cr2hot.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cr2plugins.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cr2raw.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\denoise.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\image.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\ptr.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\resample.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\sharpen.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\tile.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\ustring.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\stdafx.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2info\CR2Info.h">
+      <Filter>Header Files\cr2info</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2info\edsdk.h">
+      <Filter>Header Files\cr2info</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2info\EDSDKErrors.h">
+      <Filter>Header Files\cr2info</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2info\EDSDKTypes.h">
+      <Filter>Header Files\cr2info</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\cderror.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\cdjpeg.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jconfig.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jdct.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jerror.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jinclude.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jmemsys.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jmorecfg.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jpegint.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jpeglib.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\jversion.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="libjpeg\transupp.h">
+      <Filter>Header Files\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\exif.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\saveimage.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\cpuinfo.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\os.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+    <ClInclude Include="cr2raw\crzops.h">
+      <Filter>Header Files\cr2conv</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RITDarkRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cr2conv.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cr2develop.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cr2hot.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cr2plugins.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cr2raw.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\denoise.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\image.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\resample.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\sharpen.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\string.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\tile.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2info\CR2Info.cpp">
+      <Filter>Source Files\cr2info</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\exif.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\saveimage.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\cpuinfo.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\os.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+    <ClCompile Include="cr2raw\crzops.cpp">
+      <Filter>Source Files\cr2conv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RITDarkRoom.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RITDarkRoom.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="1dmid.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="1dmed.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="1dsml.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="1dbig.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="manifest.xml">
+      <Filter>Resource Files</Filter>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="cr2info\EDSDK.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="libjpeg\jpeg.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="libzip\libzip.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
